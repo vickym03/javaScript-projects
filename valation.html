@@ -1,0 +1,125 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="dist/css/bootstrap.css">
+		<link rel="stylesheet" href="faicon/css/all.css">
+		<link rel="stylesheet" href="faicon/css/carousel.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="dist/js/bootstrap.min.js"></script>
+	<title> Form Validation using Bootstrap</title>
+</head>
+
+
+
+<body >
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-12 m-0">
+				<div class="card-header bg-dark text-info text-center"> <b>   JavaScript form validation using Bootstrap</b></div>
+				<div class="card-body ">
+					<!--rightbody start-->
+					<div class="row form-group col-md-10">
+						<!-- name -->
+						<div class="col-md-2 text-warning"> <b> Name</b> <span class="text-danger"><b>*</b></span></div>
+						<div class="col-md-4"> <input type="text" id="username" class="form-control" />
+							<small id="username-error" style="display: none" class="error text-danger" > <i>Username cannot be empty</i></small>
+						</div>
+						
+							<!-- age -->
+						<div class="col-md-2 text-warning"> <b>Age</b> <span class="text-danger"><b>*</b></span> </div>
+						<div class="col-md-4"> <input id="age" type="text" name="age" class="form-control" />
+							<small id="age-error" class="error text-danger" ></small>
+						</div>	
+					</div>
+
+
+								<!--password -->
+					<div class="row form-group col-md-10">
+						<div class="col-md-2 text-warning"> <b>Password</b> <span class="text-danger"><b>*</b></span></div>
+						<div class="col-md-4"> <input type="password" id="userPassword" name="pass" class="form-control" />
+							<small id="password-error" class="error text-danger" style="display: none"> <i>Password should contain atleast 8 characters</i></small>
+						</div>
+
+						<div class="col-md-2 text-warning mr-3"> <b>State</b> <span class="text-danger"><b>*</b></span></div>
+
+						<div class="form-group">
+								<select class="form-control form-control-sm" id="city">
+										<option value="">----Choose City----</option>
+										<option>Bangalore</option>
+										<option>Pune</option>
+										<option>Jaipur</option>
+										<option>Delhi</option>
+										<option>Mumbai</option>
+										<option>Hyderabad</option>
+										<option>Assam</option>
+										<option>Chennai</option>
+										<option>Patna</option>
+										<option>Kerla</option>
+								</select>
+							<small id="cityError" class="text-danger"></small>
+						</div>
+
+					</div>
+								<!-- email -->
+					<div class="row form-group col-md-10">
+						<div class="col-md-2 text-warning"> <b> E-mail </b> <span class="text-danger"><b>*</b></span>
+						</div>
+						<div class="col-md-4"> <input type="email"  id="exampleFormControlInput1"  name="email" class="form-control" />
+							<small id="Email" style=" display: none" class="text-danger"><i>	Please enter a valid email</i> </small>
+						</div>
+
+						<div class="col-md-2 text-warning"> <b> Gender</b> <span class="text-danger"><b>*</b></span></div>
+						<div class="col-md-4">
+							<input type="radio" name="gender" value="option1" id="inlineRadio1"> Male &nbsp;
+							<input type="radio" name="gender" value="option2"  id="inlineRadio2"> Female&nbsp;
+							<input type="radio" name="gender" value="option3"  id="inlineRadio3"> Other
+							<small id="RadioButtonShow" style="display: none;" class="text-danger" > <i>Please select Gender </i></small>
+						</div>
+					</div>
+
+					<div class="row form-group col-md-10">
+						<div class="col-md-3 text-warning"> <b> Subject Studied </b> <span
+								class="text-danger"><b>*</b></span> </div>
+
+								<!--checkbox -->
+						<div class="col-md-7">
+							<input type="checkbox" name="" value="option1" id="inlineCheckbox1"> Maths &nbsp;
+							<input type="checkbox" name="" value="option2" id="inlineCheckbox2">  Biology &nbsp;
+							<input type="checkbox" name="" value="option3" id="inlineCheckbox3"> Chemistry &nbsp;
+							<input type="checkbox" name="" value="option4" id="inlineCheckbox4"> Physics &nbsp;  <br>
+							<small id="checkBoxError" class="text-danger" style="display: none" ><i>Please select Subject Studied</i></small>
+						</div>
+					</div>
+
+					<div class="row form-group col-md-10">
+						<div class="col-md-7 mr-5">
+							<input type="checkbox" id="terms"class="text-dark" > Agree to terms and
+								condidtions &nbsp;
+								<small id="TandC" style="display: none" class="text-danger" > <i> Please accept terms and condition </i></small>
+						</div>
+					</div>
+				</div>
+				<div class="text-center ">
+					<div id="submit-button" class="btn btn-success" >Register</div>
+
+				</div>
+			</div>
+			<!-- footer -->
+			<!-- <div class="card-footer bg-info  col-md-12 ml-5" ></div> -->
+		</div>
+	</div>
+
+
+
+
+
+
+<script src="./valation.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
