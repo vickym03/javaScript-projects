@@ -50,13 +50,21 @@
                         <small id="passworderror" style="display: none" class="error text-danger"> <i>Please provide a valid password</i> </small>
                     </div>
 
-
+                    
+                    <!-- Gender-->
+                    <!-- <div class="m-3">
+                        <label class="text-dark "><b>Gender</b> <span class="text-danger"><b>*</b></span></label> <br> 
+							<input type="radio" name="gender" value="option1" id="inlineRadio1" > Male &nbsp;
+							<input type="radio" name="gender" value="option2"  id="inlineRadio2"> Female&nbsp;
+							<input type="radio" name="gender" value="option3"   id="inlineRadio3"> Other  
+							<small id="RadioButtonShow" style="display: none;" class="text-danger" > <i>Please select Gender </i></small>
+                    </div> -->
 
                     <!-- <label for="password" id="pass">
                 Password :
             </label>
             <input type="password" name="password" id="password" title="must contain at least one uppercase and one numberand atleast 8 or more character" required>
-            <!-- <input  onclick="password()"> -->
+        <input  onclick="password()"> -->
                     <!-- <span id="passworderror" class="error"></span> -->
                     <!-- <br><br>  -->
 
@@ -86,7 +94,9 @@
             <span id="agreeerror"></span>
             <br><br> -->
                     <!-- <button id="submit">submit</button> -->
-                    <button class="btn btn-success m-3 p-1 btn-block" id="submit">Save Details</button>
+                    <button class="btn btn-success m-1 ml-3     p-1 " id="submit">Save Details</button>
+                    <button class="btn btn-danger m-1  ml-3 
+                    p-1" onclick="deleteLocal()">Delete Details</button>
                 </div>
             </div>
 
@@ -98,8 +108,9 @@
                         <tr class="bg-warning text-white">
                             <th>Name</th>
                             <th>Age</th>
-                            <th>Password</th>
                             <th>Email</th>
+                            <!-- <th>Gender</th> -->
+                            <th>Password</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -123,5 +134,5 @@
             </div> -->
 
 </body>
-<script src="./valid.js"></script>
+<script src="./valid_to_table.js"></script>
 </html>

@@ -75,6 +75,7 @@ if (name) {
     if (pError) {
       password.style.display = "none";
       document.getElementById("userPassword").style.borderColor="green";
+
     } else {
       password.style.display = "block";
       document.getElementById("userPassword").style.borderColor="red";
@@ -99,13 +100,14 @@ if (name) {
   
     if (isChecked) {
       checkBox.style.display = "none";
+      document.getElementById("inlineCheckbox2").style.borderColor="red";
+
     } else {
       checkBox.style.display = "block";
-      document.getElementById("inlineCheckbox2").style.borderColor="red";
     }
   }
 
-// sex -radio
+// gender -radio
 
   const radioButton1 = document.getElementById("inlineRadio1");
   const radioButton2 = document.getElementById("inlineRadio2");
@@ -119,8 +121,11 @@ if (name) {
 
   function radioButton(radioSelect) {
     const radioButton = document.getElementById("RadioButtonShow");
+    document.getElementById("inlineRadio1").style.borderColor="red";
     if (radioSelect) {
       radioButton.style.display = "none";
+  
+
     } else {
       radioButton.style.display = "block";
     }
@@ -185,9 +190,9 @@ function termsandcondition(condition){
 
 if(name && age && password && (checkBox1.checked || checkBox2.checked || checkBox3.checked ||  checkBox4.checked) && (radioButton1.checked || radioButton2.checked || radioButton3.checked)
 && cityname &&  mail &&  terms) {
-  alert("save")
+  alert(" Entered Data is Valid !")
 } else{
-  alert("error")
+  alert("Error in Entered Data")
 }
 
   
